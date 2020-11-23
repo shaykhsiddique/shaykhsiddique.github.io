@@ -58,9 +58,9 @@
 		}
 		.boxer .row{
 			border-bottom: 1px solid #ccc;
-			padding-top: 15px;
-			padding-bottom: 8px;
-			margin-right: 20px;
+			padding-top: 10px;
+			/*padding-bottom: 5px;*/
+			margin-right: 10px;
 		}
 		.col-sm-2 h3{
 			font-size: 25px;
@@ -68,13 +68,17 @@
 			color: #333;
 			font-weight: normal;
 		}
-		.col-sm-8 p{
+		.col-sm-8 p, .col-sm-9 p{
 			text-align: justify;
   			text-justify: inter-word;
-  			font-size: 18px;
+  			font-size: 10px;
 		}
-		.col-sm-8 td{
-			padding-bottom: 20px;
+
+		.objtextstyle p{
+  			font-size: 15px;
+		}
+		.col-sm-8 td, .col-sm-9 td{
+			padding-bottom: 12px;
 			text-align: justify;
 		}
 		#td_long{
@@ -92,18 +96,42 @@
 		}
 		.job {
 		    position: relative;
-		    margin-bottom: 1em;
-		    padding-bottom: 1em;
+		    margin-bottom: 5px;
+		    padding-bottom: 5px;
 		    border-bottom: 1px solid #ccc;
 		}
-		.job #job_heading{
-			font-size: 25px;
+		.job-last {
+		    position: relative;
+		    margin-bottom: 5px;
+		    padding-bottom: 5px;
+		}
+
+		.job #job_heading, .job-last #job_heading{
+			font-size: 22px;
 			font-weight: 500;
 		}
-		.job p{
-			padding-top: 20px;
+		.job p, .job-last p{
+			padding-top: 10px;
 			font-size: 15px;
 		}
+
+		.job address{
+			font-size: 12px;
+			font-style: italic;
+			margin-bottom: 0px;
+		}
+
+		.skills_fontstyle{
+			font-size: 15px;
+		}
+
+		.educationfont1{
+			font-size: 18px;
+		}
+		.educationfont2{
+			font-size: 15px;
+		}
+
 		#back-to-top {
 		    display: none;
 		    position: fixed;
@@ -138,6 +166,25 @@
 			body{
 				padding-top:20px;
 			}
+			.job p, .job-last p {
+			    padding-top: 10px;
+			    font-size: 12px;
+			}
+			.job, .job span, .job-last span{
+				font-size: 12px;
+			}
+			.skills_fontstyle{
+				font-size: 12px;
+			}
+			.educationfont1{
+				font-size: 15px;
+			}
+			.educationfont2{
+				font-size: 12px;
+			}
+			.job #job_heading, .job-last #job_heading{
+				font-size: 20px;
+			}
 			.inner{
 				border-width: 5px 0 2px 0;
 			}
@@ -148,9 +195,16 @@
 				letter-spacing: 1px;
 				font-size: 20px;
 			}
+			#intro{
+				padding-right: 0px;
+				padding-left: 5px;
+			}
+			#intro a{
+				font-size: 10px;
+			}
 			.col-4 img{
-				height: 80px;
-				width: 60px;
+				max-height: 110px;
+				width: 100%;
 			}
 			.boxer .col-sm-7 h2{
 				font-size: 10px;
@@ -164,223 +218,247 @@
 </head>
 <body>
 <center>
-	<div class="row">
-		<div class="col-sm-1 col-1">
-			<!-- left space -->
-		</div>
-		<div class="col-sm-10 col-10">
-			<div class="inner">
-				<div class="boxer">
-				<!-- first row -->
-					<div class="row">
-						<div class="col-sm-7 col-6">
-							<h1>Shaykh Siddique</h1>
-							<h2>Software | Web | Server</h2>
-							<span class="fa">&#xf1c9;</span>
-							<a href="http://resume.shaykhsiddique.codes">resume.shaykhsiddique.codes</a><br>
-							<span class="fa" style="font-size:20px;">&#xf0e0;</span>
-							<a href="mailto:shaykhsiddiqee@gmail.com">shaykhsiddiqee@gmail.com</a><br>
-							<span class="fa">&#xf09b;</span>
-							<a href="https://github.com/shaykhsiddique"> github.com/shaykhsiddique</a><br>
-							<span class="fa">&#xf095;</span>
-							<span style="color:#333; font-size:15px;">+8801521306492</span><br><br>
-							<button type="button" onclick="window.print();return false;">Save as PDF</button>
-
-						</div>
-						<div class="col-sm-3 col-4" style="padding-right: 0px;">
-							<img src="image_shaykh2.jpg" class="img-thumbnail" align="right" alt="image">
-						</div>
-					</div>
-					<!-- second row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Objective</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>To Build my career in a challenging and dignified position such a private organization, where creativity, honesty, sincerity, skills and performances are the criteria of preferences. Fast learner and very enthusiastic to learn new things related to programming as it is my passion.</p>
-						</div>
-					</div>
-					<!-- third row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Profile</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>
-								<span>Name: </span> <span>Shaykh Siddique</span><br>
-								<span>Father: </span> <span>MD. Abu Bakar Siddique</span><br>
-								<span>Mother: </span> <span>Bilkis Begum</span><br>
-								<span>Date of Birth: </span> <span>9<sup>th</sup> December, 1997</span><br>
-							</p>
-						</div>
-					</div>
-					<!-- fourth row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Education</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>
-								<table style="width:100%">
-								  <tbody><tr style="font-size:18px;">
-								    <td>Since 2016</td>
-								    <td id="td_long">East West University, Dhaka.<br><span style="font-size:15px;">Depertment of Computer Science and Engineering,<br>CGPA: 3.04 (out of 4)<br>Passing Year: 2020<br></span></td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>June, 2015</td>
-								    <td id="td_long">Govt. Shahid Smrity College, Muktagacha, Mymensingh.<br><span style="font-size:15px;">Higher Secondary School Certificate, Science Group.<br>Grade: 4.33 (out of 5)<br>Passing Year: 2015</span></td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>April, 2013</td>
-								    <td id="td_long">Nabarun Bidyaniketon, Muktagachha, Mymensingh.<br><span style="font-size:15px;">Secondary School Certificate, Science Group.<br>Grade: 5.00 (out of 5)<br>Passing Year: 2013<br></span></td>
-								  </tr>
-								</tbody></table>
-							</p>
-						</div>
-					</div>
-					<!-- fiveth row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Skills</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>
-								<table style="width:100%">
-								  <tbody><tr style="font-size:18px;">
-								    <td>Problem Solving</td>
-								    <td id="td_long">Solving different kind of algorithm and data structure based problems. ACM problem solving with online judges and many onsite programming contest. Preferred programming language for problem solving is C++.</td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>Software</td>
-								    <td id="td_long">Responsive web UI designing and backend developing. Working with template Engine-Twig, Freemarker, Jtwig, backend is comfortable with php, java-servlet, python and relational database designing. Analyze, Architect and Design applications. Knowledge and experience with test methodology, SQA process, SDLC and familiar with Design Patterns (Factory, Builder, Memento).</td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>Unix/Linux</td>
-								    <td id="td_long">Linux server configuration, administration and maintenance. Prefer to use command line interpreter with Bash. Transparent idea with process controling, sheduling and shell scripting.</td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>Information Security</td>
-								    <td id="td_long">Advanced security design for server. Vulnerability analysis and possible steps of solving vulnerability. Using kali linux, nmap, vega, sqlmap, sql-injector, ddos, mirror-zone and also many server/port scanning software.</td>
-								  </tr>
-									<tr style="font-size:18px;">
-								    <td>Others</td>
-								    <td id="td_long">Proven ability to lead and manage a wide variety of design and development projects in team and independent situations. Basic idea of using game development engine Unity, Gamemaker advance and Blender 3D character modeling. Basic dealing with Android Studio, Wordpress, Matlab, Antlr. Working experience with Oracle database, Oracle Application Express, SQL developer tool. Data analysis tools with python and Weka.</td>
-								  </tr>
-								</tbody></table>
-							</p>
-						</div>
-					</div>
-					<!-- sixth row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Technical</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>
-								<ul class="talent">
-									<li>C/C++</li>
-									<li>PHP</li>
-									<li>Java/Servlet</li>
-									<li class="last">SQL/MySQL/MongoDB</li>
-								</ul>
-								<ul class="talent">
-									<li>HTML, CSS, JS (Bootstrap)</li>
-									<li>XML/JSON</li>
-									<li>JQuery</li>
-									<li class="last">Modern Template Engine</li>
-								</ul>
-
-
-								<ul class="talent">
-									<li>Linux Server</li>
-									<li>Docker</li>
-									<li>Shell Scripting</li>
-									<li class="last">Git (Source Control Systems)</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-					<!-- seventh row -->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Achievements And Experience</h3>
-						</div>
-						<div class="col-sm-8">
-							<p>
-								<div class="job">
-									<span id="job_heading">SDC Campus Ambassador</span>
-									<span style="float:right;">Since May, 2019</span><br>
-									<span>Kovair Software Inc.</span>
-									<p>SDC(Software Developer Certificate) program offers the benefits of an integrated approach to technical education through project work with the support of Institutional Project Designators.</p>
-								</div>
-
-								<div class="job">
-									<span id="job_heading">Software Development</span>
-									<span style="float:right;">Since 2015</span>
-									<p>Working with php, java, python (MVC) Web Based Software. Participated in International Telco Warfare 2017 Apps War.
-										<br><strong>Online Judge Servlet Java</strong><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;A Java based web application based on online judge. Maven dependencies are used alongside with modern devoloping  techniques. This online judge can compile, run and test any C,C++, Java and Python codes.
-										<br>Project Github Link: <a href="https://github.com/shaykhsiddique/Online-Judge-servlet-java">https://github.com/shaykhsiddique/Online-Judge-servlet-java</a>
-										<br><br>Checkout github repositories for more impressive projects. Working as a freelance programmer in <a href="https://www.dasio.org">Dasio.org</a>. Bash Scripts to automate Linux server and now continuing with <a href="https://github.com/shaykhsiddique/grandnode">GrandNode</a> a Ecommerce DOT.NET Core project.</p>
-								</div>
-
-								<div class="job">
-									<span id="job_heading">Contest Programming/ Problem Solving</span>
-									<span style="float:right;">2016-2018</span>
-									<p>Participated in many Intra-University and National Programming Contest. Big achievement was 2nd place in Programming Contest at CSE FEST 2016 in conjunction with 20 Years Celebration of  East West University and Computer Science and Engineering Department. Also participated in The 2017 ACM-ICPC Bangladesh, CUET NCPC Provincial Programming Contest.</p>
-								</div>
-
-								<div class="job">
-									<span id="job_heading">Researches & Publications</span>
-									<span style="float:right;">Since 2020</span><br>
-									<span>Title: <strong>English to Bangla Machine Translation Using Recurrent Neural Network</strong></span><br>
-									Journal: International Journal of Future Computer and Communication.<br>
-									ISSN: 2010-3751.<br>
-									Volume: 9, no. 2, pp. 46-51, 2020.<br>
-									DOI: <a href="http://doi.org/10.18178/ijfcc.2020.9.2.564">doi.org/10.18178/ijfcc.2020.9.2.564</a>
-									<p>Attended at 3rd International Conference on Signal Processing and Information Communications, which held in Bali, Indonesia during January 17-19, 2020.</p>
-								</div>
-								<div class="job">
-									<span id="job_heading">Others</span><br>
-									<span><strong>BASIS Student's Forum (Convener)</strong></span><span style="float:right;">2018-2019</span>
-									<p>Bangladesh Association of Software and Information Services (BASIS) is the national trade body for Software & IT Enabled Service industry of Bangladesh.
-									<br>Forum’s Moto: “Show your commitment to the ICT sector or profession - provide a voice for the future”</p><br>
-									<span><strong>Register and Admin</strong></span><span style="float:right;">2016</span>
-									<p>National Hackathon Bangladesh-2016, ICT Division.</p>
-								</div>
-							</p>
-						</div>
-					</div>
-					<!-- eightthrow start-->
-					<div class="row">
-						<div class="col-sm-2">
-							<h3>Projects and Source Codes</h3>
-						</div>
-						<div class="col-sm-8">
-
-							<text style="font-family:'Courier'; font-size:12px;">
-								Green Tracker(Event Management Blog): <a href="https://github.com/shaykhsiddique/Green-Beauty">github.com/shaykhsiddique/Green-Beauty</a><br>
-								Powerpuff-UNIX-Shell: <a href="https://github.com/shaykhsiddique/Powerpuff-UNIX-Shell">github.com/shaykhsiddique/Powerpuff-UNIX-Shell</a><br>
-								Remote-Shell-in-Python: <a href="https://github.com/shaykhsiddique/Remote-Shell-in-Python">github.com/shaykhsiddique/Remote-Shell-in-Python</a><br>
-								Inventory Management Software(PHP): <a href="https://github.com/shaykhsiddique/Inventory-Management-Software-">github.com/shaykhsiddique/Inventory-Management-Software-</a><br>
-								EWU Skyfighter v-1.0.0.0(Game-GML): <a href="https://github.com/shaykhsiddique/EWU-Skyfighter-v-1.0.0.0">github.com/shaykhsiddique/EWU-Skyfighter-v-1.0.0.0</a><br>
-								GitHub More Repositories: <a href="https://github.com/shaykhsiddique?tab=repositories">github.com/shaykhsiddique?tab=repositories</a><br>
-							</text>
-
-						</div>
-					</div>
-					<!-- eightthrow end-->
-					</div>
-				</div>
-				<!-- back to top button -->
-				<button id="back-to-top">
-		      		<i class="fa fa-caret-up"></i>
-			    </button>
-
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-1 col-1">
+				<!-- left space -->
 			</div>
-		</div>
-		<div class="col-sm-1 col-1">
-			<!-- right space -->
+			<div class="col-sm-10 col-10">
+				<div class="inner">
+					<div class="boxer">
+					<!-- first row -->
+						<div class="row">
+							<div class="col-sm-7 col-8" id="intro">
+								<h1>Shaykh Siddique</h1>
+								<h2>Software | Web | Server</h2>
+								<span class="fa">&#xf1c9;</span>
+								<a href="http://resume.shaykhsiddique.codes">resume.shaykhsiddique.codes</a><br>
+								<span class="fa" style="font-size:20px;">&#xf0e0;</span>
+								<a href="mailto:shaykhsiddiqee@gmail.com">shaykhsiddiqee@gmail.com</a><br>
+								<span class="fa">&#xf09b;</span>
+								<a href="https://github.com/shaykhsiddique"> github.com/shaykhsiddique</a><br>
+								<span class="fa">&#xf095;</span>
+								<span style="color:#333; font-size:15px;">+8801521306492</span><br>
+								<button type="button" style="margin: 10px;" onclick="window.print();return false;">Save as PDF</button>
+
+							</div>
+							<div class="col-sm-3 col-4" style="padding-right: 0px; padding-left: 0px;">
+								<img src="image_shaykh2.jpg" class="img-thumbnail" align="right" alt="image">
+							</div>
+						</div>
+						<!-- second row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Objective</h3>
+							</div>
+							<div class="col-sm-8 objtextstyle">
+								<p>To Build my career in a challenging and dignified position such a private organization, where creativity, honesty, sincerity, skills and performances are the criteria of preferences. Fast learner and very enthusiastic to learn new things related to programming as it is my passion.</p>
+							</div>
+						</div>
+						<!-- third row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Profile</h3>
+							</div>
+							<div class="col-sm-8 objtextstyle">
+								<p>
+									<span>Name: </span> <span>Shaykh Siddique</span><br>
+									<span>Father: </span> <span>MD. Abu Bakar Siddique</span><br>
+									<span>Mother: </span> <span>Bilkis Begum</span><br>
+									<span>Date of Birth: </span> <span>9<sup>th</sup> December, 1997</span><br>
+								</p>
+							</div>
+						</div>
+						<!-- fourth row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Education</h3>
+							</div>
+							<div class="col-sm-8">
+								<p>
+									<table style="width:100%">
+									  <tbody><tr class="educationfont1">
+									    <td>Since 2016</td>
+									    <td id="td_long">East West University, Dhaka.<br><span class="educationfont2">Depertment of Computer Science and Engineering,<br>CGPA: 3.09 (out of 4)<br>Passing Year: 2020<br></span></td>
+									  </tr>
+										<tr class="educationfont1">
+									    <td>June, 2015</td>
+									    <td id="td_long">Govt. Shahid Smrity College, Muktagacha, Mymensingh.<br><span class="educationfont2">Higher Secondary School Certificate, Science Group.<br>Grade: 4.33 (out of 5)<br>Passing Year: 2015</span></td>
+									  </tr>
+										<tr class="educationfont1">
+									    <td>April, 2013</td>
+									    <td id="td_long">Nabarun Bidyaniketon, Muktagachha, Mymensingh.<br><span class="educationfont2">Secondary School Certificate, Science Group.<br>Grade: 5.00 (out of 5)<br>Passing Year: 2013<br></span></td>
+									  </tr>
+									</tbody></table>
+								</p>
+							</div>
+						</div>
+						<!-- fiveth row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Skills</h3>
+							</div>
+							<div class="col-sm-9">
+								<p>
+									<table style="width:100%">
+									  <tbody><tr class="skills_fontstyle">
+									    <td>Problem Solving</td>
+									    <td id="td_long">Solving different kind of algorithm and data structure based problems. ACM problem solving with online judges and many onsite programming contest. Preferred programming language for problem solving is C++.</td>
+									  </tr>
+										<tr class="skills_fontstyle">
+									    <td>Software</td>
+									    <td id="td_long">Responsive web UI designing and backend developing. Working with template Engine-Twig, Freemarker, Jtwig, Blade and backend is comfortable with php, java-servlet, python. Analyze, Architect and Design applications with relational database. Knowledge and experience with test methodology, SQA process, SDLC and familiar with Design Patterns (Factory, Builder, Memento).</td>
+									  </tr>
+										<tr class="skills_fontstyle">
+									    <td>Unix/Linux</td>
+									    <td id="td_long">Linux server configuration, administration and maintenance. Prefer to use command line interpreter with Bash. Transparent idea with process controling, sheduling and shell scripting.</td>
+									  </tr>
+										<tr class="skills_fontstyle">
+									    <td>Information Security</td>
+									    <td id="td_long">Advanced security design for server. Vulnerability analysis and possible steps of solving vulnerability. Using kali linux, nmap, vega, sqlmap, sql-injector, ddos, mirror-zone and also many server/port scanning software.</td>
+									  </tr>
+										<tr class="skills_fontstyle">
+									    <td>Others</td>
+									    <td id="td_long">Proven ability to lead and manage a wide variety of design and development projects in team and independent situations. Basic idea of using game development engine Unity, Gamemaker advance and Blender 3D character modeling. Basic dealing with Android Studio, Wordpress, Matlab, Antlr. Working experience with Oracle database, Oracle Application Express, SQL developer tool. Data analysis tools with python and Weka.</td>
+									  </tr>
+									</tbody></table>
+								</p>
+							</div>
+						</div>
+						<!-- sixth row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Technical</h3>
+							</div>
+							<div class="col-sm-9">
+								<p>
+									<ul class="talent">
+										<li>C/C++</li>
+										<li>PHP (Symfony 4)</li>
+										<li>Java (Servlet)</li>
+										<li class="last">Python (Django)</li>
+									</ul>
+									<ul class="talent">
+										<li>HTML, CSS, JS, JQuery</li>
+										<li>XML/JSON, AngularJS</li>
+										<li>SQL/MySQL/MongoDB</li>
+										<li class="last">Modern Template Engine</li>
+									</ul>
+
+
+									<ul class="talent">
+										<li>Linux Server</li>
+										<li>Docker</li>
+										<li>Shell Scripting</li>
+										<li class="last">Git (Source Control Systems)</li>
+									</ul>
+								</p>
+							</div>
+						</div>
+						<!-- seventh row -->
+						<div class="row">
+							<div class="col-sm-2">
+								<h5>Experiences and Achievements</h5>
+							</div>
+							<div class="col-sm-9">
+								<p>
+									
+									<div class="job">
+										<span id="job_heading">Software Engineer (Remote)</span>
+										<span style="float:right;">Since June, 2020</span><br>
+										<span>AGILab</span>
+										<address>Corso Margherita, 166 <br> 87010 Terranova Da Sibari CS, Italy.</address>
+										<p>Employed as full stack remote web developer in <a href="http://agilab.io">agilab.io</a>. Several projects are completed successfully and most of them are web applications. Moreover, have some working affairs with server administration and managements</p>
+									</div>
+
+									<div class="job">
+										<span id="job_heading">UI/UX Developer (Remote)</span>
+										<span style="float:right;">2018-2019</span><br>
+										<span>Dasio</span>
+										<address>2158 av. de la Rivière-Jaune <br>
+										Quebec, G2N 1T5, QC, Canada.</address>
+										<p>Working as a frontend developer in <a href="https://www.dasio.org">dasio.org</a>. UI/UX development, Bash Scripts to automate Linux server, and contributed in <a href="https://github.com/shaykhsiddique/grandnode">GrandNode</a> a Ecommerce DOT.NET Core project.</p>
+									</div>
+
+									<div class="job">
+										<span id="job_heading">Software Development</span>
+										<span style="float:right;">Since 2015</span>
+										<p>Working with php, java, python (MVC) Web Based Software. Participated in International Telco Warfare 2017 Apps War.
+											<br><strong>Online Judge Servlet Java</strong><br>
+											&nbsp;&nbsp;&nbsp;&nbsp;A Java based web application based on online judge. Maven dependencies are used alongside with modern devoloping  techniques. This online judge can compile, run and test any C,C++, Java and Python codes.
+											<br>Project Github Link: <a href="https://github.com/shaykhsiddique/Online-Judge-servlet-java">https://github.com/shaykhsiddique/Online-Judge-servlet-java</a>
+									</div>
+
+									<div class="job">
+										<span id="job_heading">Contest Programming/ Problem Solving</span>
+										<span style="float:right;">2016-2018</span>
+										<p>Participated in many Intra-University and National Programming Contest. Big achievement was 2nd place in Programming Contest at CSE FEST 2016 in conjunction with 20 Years Celebration of  East West University and Computer Science and Engineering Department. Also participated in The 2017 ACM-ICPC Bangladesh, CUET NCPC Provincial Programming Contest.</p>
+									</div>
+
+									<div class="job">
+										<span id="job_heading">Researches & Publications</span>
+										<span style="float:right;">Since 2020</span><br>
+										<span>Thesis Paper: <strong>CVD- An Improved Approach of Software Vulnerability Detection for Object Oriented Programming Languages using Deep Learning</strong></span><br>
+										Journal: Computers and Electrical Engineering (Under Review).<br>
+										ISSN: 0045-7906.<br><br>
+
+										<span>Conference: <strong>3rd International Conference on Signal Processing and Information Communications</strong></span><br>
+										<address>January 17-19, 2020 at Jl. Jenggala Tuban, Kuta <br> Kabupaten Badung,  Bali 80361, Indonesia.</address>
+										<span>Title: <strong>English to Bangla Machine Translation Using Recurrent Neural Network</strong></span><br>
+										Journal: International Journal of Future Computer and Communication.<br>
+										ISSN: 2010-3751.<br>
+										Volume: 9, no. 2, pp. 46-51, 2020.<br>
+										DOI: <a href="http://doi.org/10.18178/ijfcc.2020.9.2.564">doi.org/10.18178/ijfcc.2020.9.2.564</a>
+									</div>
+									<div class="job-last">
+										<span id="job_heading">Others</span><br>
+										<span><strong>SDC Campus Ambassador</strong></span><span style="float:right;">2019-2020</span><br>
+										<span>Kovair Software Inc.</span>
+										<p>SDC (Software Developer Certificate) program offers the benefits of an integrated approach to technical education through project work with the support of Institutional Project Designators.</p>
+
+										<span><strong>BASIS Student's Forum (Convener)</strong></span><span style="float:right;">2018-2019</span>
+										<p>Bangladesh Association of Software and Information Services (BASIS) is the national trade body for Software & IT Enabled Service industry of Bangladesh.
+										<br>Forum’s Moto: “Show your commitment to the ICT sector or profession - provide a voice for the future”</p>
+
+
+										<span><strong>Register and Admin</strong></span><span style="float:right;">2016</span>
+										<p>National Hackathon Bangladesh-2016, ICT Division.</p>
+									</div>
+								</p>
+							</div>
+						</div>
+						<!-- eightthrow start-->
+						<div class="row">
+							<div class="col-sm-2">
+								<h3>Projects and Source Codes</h3>
+							</div>
+							<div class="col-sm-9">
+
+								<text style="font-family:'Courier'; font-size:12px;">
+									<center style="font-style: italic;">All the professional and the live projects are in private repository to reserve © copyright.</center>
+									Green Tracker(Event Management Blog): <a href="https://github.com/shaykhsiddique/Green-Beauty">github.com/shaykhsiddique/Green-Beauty</a><br>
+									Powerpuff-UNIX-Shell: <a href="https://github.com/shaykhsiddique/Powerpuff-UNIX-Shell">github.com/shaykhsiddique/Powerpuff-UNIX-Shell</a><br>
+									Remote-Shell-in-Python: <a href="https://github.com/shaykhsiddique/Remote-Shell-in-Python">github.com/shaykhsiddique/Remote-Shell-in-Python</a><br>
+									Inventory Management Software(PHP): <a href="https://github.com/shaykhsiddique/Inventory-Management-Software-">github.com/shaykhsiddique/Inventory-Management-Software-</a><br>
+									EWU Skyfighter v-1.0.0.0(Game-GML): <a href="https://github.com/shaykhsiddique/EWU-Skyfighter-v-1.0.0.0">github.com/shaykhsiddique/EWU-Skyfighter-v-1.0.0.0</a><br>
+									GitHub More Repositories: <a href="https://github.com/shaykhsiddique?tab=repositories">github.com/shaykhsiddique?tab=repositories</a><br>
+								</text>
+
+							</div>
+						</div>
+						<!-- eightthrow end-->
+						</div>
+					</div>
+					<!-- back to top button -->
+					<button id="back-to-top">
+			      		<i class="fa fa-caret-up"></i>
+				    </button>
+
+				</div>
+			<!-- </div> -->
+			<div class="col-sm-1 col-1">
+				<!-- right space -->
+			</div>
 		</div>
 	</div>
 </center>
