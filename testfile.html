@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compass Heading</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 20%;
+    }
+    #heading {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    #status {
+      color: red;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>Compass Heading</h1>
+  <p>Current direction: <span id="heading">0</span>°</p>
+  <p id="status"></p>
+  <p>North = 0°, East = 90°, South = 180°, West = 270°</p>
+
+  <script>
+    // Fallback simulation mode
+    let simulationMode = false;
+    let simulatedHeading = 0;
+
+    // Compass calculation function
+    function compassHeading(alpha, beta, gamma) {
+      // Convert degrees to radians
+      const alphaRad = alpha * (Math.PI / 180);
+      const betaRad = beta * (Math.PI / 180);
+      const gammaRad = gamma * (Math.PI / 180);
+
+      // Calculate rotation components
+      const cA = Math.cos(alphaRad);
+      const sA = Math.sin(alphaRad);
+      const cB = Math.cos(betaRad);
+      const sB = Math.sin(betaRad);
+      const cG = Math.cos(gammaRad);
+      const sG = Math.sin(gammaRad);
+
+      // Calculate A, B rotation components
+      const rA = -cA * sG - sA * sB * cG;
+      const rB = -sA * sG + cA * sB * cG;
+
+      // Calculate compass heading
+      let compassHeading = Math.atan2(rA, rB);
+
+      // Convert radians to degrees and normalize to [0, 360)
+      compassHeading = compassHeading * (180 / Math.PI);
+      if (compassHeading < 0) compassHeading += 360;
+
+      return compassHeading;
+    }
+
+    // Function to update heading on the screen
+    function updateHeading(heading) {
+      document.getElementById('heading').textContent = heading.toFixed(1);
+    }
+
+    // Function to simulate heading changes in fallback mode
+    function startSimulation() {
+      setInterval(() => {
+        simulatedHeading = (simulatedHeading + 1) % 360; // Increment simulated heading
+        updateHeading(simulatedHeading);
+      }, 100); // Update every 100ms
+    }
+
+    // Try to use device orientation data
+    if (window.DeviceOrientationEvent) {
+      document.getElementById('status').textContent = "Waiting for sensor permission...";
+      
+      // Request permission on iOS
+      if (typeof DeviceOrientationEvent.requestPermission === "function") {
+        DeviceOrientationEvent.requestPermission()
+          .then((response) => {
+            if (response === "granted") {
+              document.getElementById('status').textContent = "Device sensors active.";
+              window.addEventListener("deviceorientation", (event) => {
+                const { alpha, beta, gamma } = event;
+                if (alpha !== null && beta !== null && gamma !== null) {
+                  const heading = compassHeading(alpha, beta, gamma);
+                  updateHeading(heading);
+                }
+              });
+            } else {
+              document.getElementById('status').textContent = "Permission denied. Simulation mode active.";
+              simulationMode = true;
+              startSimulation();
+            }
+          })
+          .catch(() => {
+            document.getElementById('status').textContent = "Permission request failed. Simulation mode active.";
+            simulationMode = true;
+            startSimulation();
+          });
+      } else {
+        // For Android and non-iOS devices
+        document.getElementById('status').textContent = "Device sensors active.";
+        window.addEventListener("deviceorientation", (event) => {
+          const { alpha, beta, gamma } = event;
+          if (alpha !== null && beta !== null && gamma !== null) {
+            const heading = compassHeading(alpha, beta, gamma);
+            updateHeading(heading);
+          }
+        });
+      }
+    } else {
+      // Fallback if device orientation is not supported
+      document.getElementById('status').textContent = "Device orientation not supported. Simulation mode active.";
+      simulationMode = true;
+      startSimulation();
+    }
+  </script>
+</body>
+</html>
