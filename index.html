@@ -27,11 +27,6 @@
   <p>North = 0°, East = 90°, South = 180°, West = 270°</p>
 
   <script>
-    // Fallback simulation mode
-    let simulationMode = false;
-    let simulatedHeading = 0;
-
-    // Compass calculation function
     function compassHeading(alpha, beta, gamma) {
       // Convert degrees to radians
       const alphaRad = alpha * (Math.PI / 180);
@@ -60,24 +55,11 @@
       return compassHeading;
     }
 
-    // Function to update heading on the screen
-    function updateHeading(heading) {
-      document.getElementById('heading').textContent = heading.toFixed(1);
-    }
-
-    // Function to simulate heading changes in fallback mode
-    function startSimulation() {
-      setInterval(() => {
-        simulatedHeading = (simulatedHeading + 1) % 360; // Increment simulated heading
-        updateHeading(simulatedHeading);
-      }, 100); // Update every 100ms
-    }
-
-    // Try to use device orientation data
+    // Check if device supports orientation
     if (window.DeviceOrientationEvent) {
-      document.getElementById('status').textContent = "Waiting for sensor permission...";
+      document.getElementById('status').textContent = "Waiting for sensor data...";
       
-      // Request permission on iOS
+      // Handle iOS permission request
       if (typeof DeviceOrientationEvent.requestPermission === "function") {
         DeviceOrientationEvent.requestPermission()
           .then((response) => {
@@ -87,36 +69,30 @@
                 const { alpha, beta, gamma } = event;
                 if (alpha !== null && beta !== null && gamma !== null) {
                   const heading = compassHeading(alpha, beta, gamma);
-                  updateHeading(heading);
+                  document.getElementById('heading').textContent = heading.toFixed(1);
                 }
               });
             } else {
-              document.getElementById('status').textContent = "Permission denied. Simulation mode active.";
-              simulationMode = true;
-              startSimulation();
+              document.getElementById('status').textContent = "Permission denied.";
             }
           })
           .catch(() => {
-            document.getElementById('status').textContent = "Permission request failed. Simulation mode active.";
-            simulationMode = true;
-            startSimulation();
+            document.getElementById('status').textContent = "Permission request failed.";
           });
       } else {
-        // For Android and non-iOS devices
+        // Android or older iOS devices
         document.getElementById('status').textContent = "Device sensors active.";
         window.addEventListener("deviceorientation", (event) => {
           const { alpha, beta, gamma } = event;
           if (alpha !== null && beta !== null && gamma !== null) {
             const heading = compassHeading(alpha, beta, gamma);
-            updateHeading(heading);
+            document.getElementById('heading').textContent = heading.toFixed(1);
           }
         });
       }
     } else {
-      // Fallback if device orientation is not supported
-      document.getElementById('status').textContent = "Device orientation not supported. Simulation mode active.";
-      simulationMode = true;
-      startSimulation();
+      // No orientation support
+      document.getElementById('status').textContent = "Device orientation not supported.";
     }
   </script>
 </body>
