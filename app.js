@@ -328,9 +328,10 @@ const NewsArticle = {
 const routes = [
   { path: '/', component: Home },
   { path: '/research', component: Research },
-  { path: '/education', component: Education },
   { path: '/publications', component: Publications },
   { path: '/experience', component: Experience },
+  { path: '/education', component: Education },
+  { path: '/awards', component: Awards },
   { path: '/contact', component: Contact },
   { path: '/news/:id', component: NewsArticle, name: 'news-article' }
 ];
