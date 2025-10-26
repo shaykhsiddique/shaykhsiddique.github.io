@@ -1,0 +1,44 @@
+[
+  {
+    "year": "2023",
+    "title": "Outstanding Student Award",
+    "organization": "Prairie View A&M University",
+    "description": "Recognition of academic achievement for Outstanding Student Award 2023 from Prairie View A&M University."
+  },
+  {
+    "year": "2022",
+    "title": "HBCU Terminal",
+    "organization": "AI Programming Competition",
+    "description": "Champion - Awarded for HBCU Terminal 2022, an AI programming competition."
+  },
+  {
+    "year": "2020",
+    "title": "Oral Presentation Award",
+    "organization": "Third International Conference on Signal Processing and Information Communications",
+    "description": "Awarded for oral presentation, January 17-19, 2020, Kuta, Bali, Indonesia."
+  },
+  {
+    "year": "2020",
+    "title": "Undergraduate Research Scholarship",
+    "organization": "East West University",
+    "description": "Scholarship from EWU Students Scholarly Fund 2020, for undergraduate research achievements."
+  },
+  {
+    "year": "2018",
+    "title": "Certified Research Participant",
+    "organization": "Cornell Univ. & UC San Diego Study",
+    "description": "Attended the research study 'How Computer Programmers Work' organized by Cornell University, UC San Diego, and IPA, Bangladesh."
+  },
+  {
+    "year": "2017",
+    "title": "Programming Trainer",
+    "organization": "EWU Computer Programming Club",
+    "description": "Computer programming trainer, East West University Computer Programming Club (EWUCoPC)."
+  },
+  {
+    "year": "2017",
+    "title": "ACM-ICPC Honorable Mention",
+    "organization": "CUET NCPC Bangladesh",
+    "description": "2017 ACM-ICPC Bangladesh, CUET NCPC Provincial Programming Contest, Contestant, awarded honorable mention."
+  }
+]
