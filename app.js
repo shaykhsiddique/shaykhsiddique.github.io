@@ -136,7 +136,7 @@ const Research = {
       <h2>My Research</h2>
       <div class="row">
         <div class="col-md-2 mb-3" data-aos="fade-right">
-          <img src="MyDp.jpeg" class="img-thumbnail shadDown">
+          <img src="mynewpicMaritime.jpeg" class="img-thumbnail shadDown">
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-9" data-aos="fade-up">
