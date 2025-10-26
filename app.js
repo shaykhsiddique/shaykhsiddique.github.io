@@ -38,7 +38,7 @@ const Home = {
             <source src="myvideo_compressed.mp4" type="video/mp4"/>
           </video>
           <center><div class="typewriterClass"
-            style="position:absolute;top:28px;left:28px;z-index:2;background:rgba(0,25,55,0.49);padding:16px 22px;border-radius:12px;box-shadow:0 0 12px #151e2c;">
+            style="position:absolute;top:28px;left:28px;z-index:2;;padding:16px 22px;border-radius:12px;">
             <h3>{{ typingText }}</h3>
           </div></center>
         </div>
