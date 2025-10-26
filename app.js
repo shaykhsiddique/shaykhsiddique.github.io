@@ -238,13 +238,13 @@ const Awards = {
     <div>
       <hr>
       <h2 data-aos="fade-left">Leadership & Awards</h2>
-      <ul class="list-group list-group-flush mt-3">
-        <li v-for="award in awards" class="list-group-item" data-aos="fade-right" style="background: transparent; border: none;">
-          <b class="appFontcolor">{{ award.title }}</b> <span style="color: #87ffce;">({{ award.year }})</span><br>
-          <small style="color: #43e0b5;">{{ award.organization }}</small>
+      <div class="timeline">
+        <div v-for="award in awards" class="timeline-item" data-aos="fade-right">
+          <h3>{{ award.title }} <span style="color: #87ffce; font-size:1rem;">({{ award.year }})</span></h3>
+          <div class="location" style="color: #43e0b5;">{{ award.organization }}</div>
           <div style="color: #ccc; font-size:1rem;">{{ award.description }}</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   `,
   created() { loadData('data/award.json').then(d => this.awards = d); },
