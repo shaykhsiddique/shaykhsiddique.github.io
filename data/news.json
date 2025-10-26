@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "New Research on Maritime Cybersecurity Published",
+    "date": "October 26, 2024",
+    "content": "A new paper on hardening AI models in maritime systems has been accepted to the ACM Conference on Computer and Communications Security (CCS).",
+    "imageUrl": "images/maritime-cyber-security.jpg",
+    "story": "<p>The full paper, titled 'Adversarial Robustness in AI-Powered Maritime Navigation,' investigates vulnerabilities in sensor fusion pipelines. It proposes a novel defense mechanism that leverages cross-modal validation between AIS, GNSS, and radar data to detect and mitigate spoofing attacks in real-time.</p><p>This work was conducted in collaboration with the SPIES and CARES labs at Texas A&M University and is set to be presented in November.</p>"
+  },
+  {
+    "id": 2,
+    "title": "Awarded Best Paper at AIKE 2023",
+    "date": "September 15, 2024",
+    "content": "Honored to receive the best paper award for the work on detecting neurological disorders using deep learning.",
+    "imageUrl": null,
+    "story": "<p>The paper, 'An Enhanced Strategy of Detecting Neurological Disorders from Magnetic Resonance Images Using Deep Learning,' was recognized at the 2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE).</p><p>The research introduced a custom CNN architecture that outperformed existing models in accuracy and computational efficiency, demonstrating a significant step forward for AI-assisted medical diagnostics.</p>"
+  },
+  {
+    "id": 3,
+    "title": "Presented at Future Technologies Conference",
+    "date": "October 20, 2022",
+    "content": "Presented research on 'CVD', an improved approach for software vulnerability detection using deep learning.",
+    "imageUrl": "images/conference-presentation.jpg",
+    "story": "The presentation at the Future Technologies Conference in Vancouver detailed 'CVD,' a novel deep learning model for identifying security vulnerabilities in C++ and Java source code. The model uses a combination of LSTMs and attention mechanisms to analyze code syntax and semantics, achieving a high degree of accuracy in detecting common flaws like buffer overflows and injection vulnerabilities."
+  }
+]
