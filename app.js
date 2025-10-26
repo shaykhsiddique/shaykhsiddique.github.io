@@ -135,31 +135,6 @@ const Home = {
   }
 };
 
-const Education = {
-  data() { return { items: [] }; },
-  template: `
-    <div>
-      <hr>
-      <h2 data-aos="fade-left">Education</h2>
-      <div class="row">
-        <div class="col-md-8 col-12">
-          <div class="timeline">
-            <div class="timeline-item" v-for="e in items" data-aos="fade-right">
-              <h3>{{e.degree}}</h3>
-              <time>{{e.period}}</time>
-              <div class="location">{{e.institution}}</div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 text-center col-12">
-          <img src="my_rep.jpeg" class="img-rounded mt-3" height="170" data-aos="zoom-in">
-        </div>
-      </div>
-    </div>
-  `,
-  created() { loadData('data/education.json').then(d => this.items = d); },
-  mounted() { AOS.init({ duration: 800 }); }
-};
 
 const Research = {
   template: `
