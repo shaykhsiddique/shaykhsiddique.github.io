@@ -92,21 +92,24 @@
   
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Close navbar collapse after any router-link is clicked
-  document.querySelectorAll('.navbar-nav .router-link-active, .navbar-nav .router-link').forEach(link => {
-    link.addEventListener('click', function() {
+  // Collapse navbar when a router-link is clicked.
+  document.getElementById('navMain').addEventListener('click', function(e) {
+    var target = e.target;
+    // If a router-link is clicked (has the neon-link class)
+    if (target.classList.contains('neon-link')) {
+      // Only close if the collapse is open
       var navbarCollapse = document.getElementById('navMain');
       if(navbarCollapse && navbarCollapse.classList.contains('show')) {
         $('.navbar-collapse').collapse('hide');
       }
-    });
+    }
   });
 
-  // Close the collapse when clicking outside the navbar
+  // Collapse when clicking outside the navbar (for mobile):
   document.addEventListener('click', function(e) {
     var navbarCollapse = document.getElementById('navMain');
-    var isNavbar = e.target.closest('.navbar');
-    if(navbarCollapse && navbarCollapse.classList.contains('show') && !isNavbar) {
+    var isNavbarChild = e.target.closest('.navbar');
+    if(navbarCollapse && navbarCollapse.classList.contains('show') && !isNavbarChild) {
       $('.navbar-collapse').collapse('hide');
     }
   });
