@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "title": "New Research on Maritime Cybersecurity Published",
-    "date": "October 26, 2024",
-    "content": "A new paper on hardening AI models in maritime systems has been accepted to the ACM Conference on Computer and Communications Security (CCS).",
-    "imageUrl": "images/maritime-cyber-security.jpg",
-    "story": "<p>The full paper, titled 'Adversarial Robustness in AI-Powered Maritime Navigation,' investigates vulnerabilities in sensor fusion pipelines. It proposes a novel defense mechanism that leverages cross-modal validation between AIS, GNSS, and radar data to detect and mitigate spoofing attacks in real-time.</p><p>This work was conducted in collaboration with the SPIES and CARES labs at Texas A&M University and is set to be presented in November.</p>"
+    "title": "Paper Published: Finding Optimal Teams – An Analysis of NBA Statistics and Constraints",
+    "date": "July 21, 2025",
+    "content": "A new research paper presents an innovative approach to NBA team selection using machine learning and optimization.",
+    "imageUrl": null,
+    "story": "<p><strong>Authors:</strong> Shaykh Siddique, Lin Li, Yonghui Wang<br><strong>Conference:</strong> 2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)<br><strong>Pages:</strong> 26-34<br><strong>Publisher:</strong> IEEE</p><p>In the dynamic realm of NBA team management, balancing the intricacies of player performance and strategic signings presents formidable challenges. Negotiating salary caps, player roles, on-court minutes, and contract durations requires a nuanced approach. This study comprehensively evaluates player efficiency and team performance, scrutinizing key statistical indicators like Points, Rebounds, Assists, Blocks, PER, RPM, Shot Charts, and others. Leveraging machine learning algorithms, including logistic, ridge, and lasso regressions, facilitates modeling the intricate relationship between player performance and team winning rates. Based on that, team player selection is formulated as a linear programming optimization problem incorporating practical constraints. Analyzing NBA player and game stats from 2012 to 2022, the experimental findings underscore the accuracy of prediction models and the value of data-driven strategies for team building.</p>"
   },
   {
     "id": 2,
-    "title": "Awarded Best Paper at AIKE 2023",
-    "date": "September 15, 2024",
-    "content": "Honored to receive the best paper award for the work on detecting neurological disorders using deep learning.",
+    "title": "Paper Published: An Enhanced Strategy of Detecting Neurological Disorders from MRI Using Deep Learning",
+    "date": "September 25, 2023",
+    "content": "Recent publication showcases a custom deep learning architecture for detecting neurological disorders from MRI images.",
     "imageUrl": null,
-    "story": "<p>The paper, 'An Enhanced Strategy of Detecting Neurological Disorders from Magnetic Resonance Images Using Deep Learning,' was recognized at the 2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE).</p><p>The research introduced a custom CNN architecture that outperformed existing models in accuracy and computational efficiency, demonstrating a significant step forward for AI-assisted medical diagnostics.</p>"
+    "story": "<p><strong>Authors:</strong> Shaykh Siddique, Shahana Shultana, Sherri Frizell<br><strong>Conference:</strong> 2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE)<br><strong>Pages:</strong> 99-104<br><strong>Publisher:</strong> IEEE</p><p>Deep learning technologies are increasingly used to analyze brain functionalities and extract beneficial features from neuroimaging data. This paper describes a multi-layered deep convolutional neural network system for detecting neurological disorders from MRI images, enhanced by grey wolf optimization for hyperparameter tuning. Multiple models were compared for medical image classification, and the proposed system outperformed existing architectures on the tested dataset. The model successfully detects the six most common neurological disorders, including Cerebral Aneurysm, Alzheimer's disease, and Parkinson's disease, demonstrating strong potential for AI-assisted medical diagnostics.</p>"
   },
   {
     "id": 3,
-    "title": "Presented at Future Technologies Conference",
-    "date": "October 20, 2022",
-    "content": "Presented research on 'CVD', an improved approach for software vulnerability detection using deep learning.",
-    "imageUrl": "images/conference-presentation.jpg",
-    "story": "The presentation at the Future Technologies Conference in Vancouver detailed 'CVD,' a novel deep learning model for identifying security vulnerabilities in C++ and Java source code. The model uses a combination of LSTMs and attention mechanisms to analyze code syntax and semantics, achieving a high degree of accuracy in detecting common flaws like buffer overflows and injection vulnerabilities."
+    "title": "Outstanding Student Award 2023 Recognized by Prairie View A&M University",
+    "date": "May 23, 2023",
+    "content": "Recognition received for academic achievement: Outstanding Student Award 2023 from Prairie View A&M University.",
+    "imageUrl": null,
+    "story": "<p>The Outstanding Student Award 2023 was presented by Prairie View A&M University in recognition of exceptional academic performance and dedication. This honor highlights not only scholarly achievements, but also contributions to research, leadership, and service throughout the degree program.</p>"
   }
 ]
