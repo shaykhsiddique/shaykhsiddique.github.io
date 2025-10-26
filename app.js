@@ -315,5 +315,5 @@ const routes = [
   { path: '/news/:id', component: NewsArticle, name: 'news-article' }
 ];
 
-const router = new VueRouter({ routes, mode: 'hash', scrollBehavior() { return { x: 0, y: 0 }; } });
+const router = new VueRouter({ routes, mode: 'history', scrollBehavior() { return { x: 0, y: 0 }; } });
 new Vue({ el: '#app', router });
