@@ -32,7 +32,7 @@ const Home = {
   template: `
     <div class="row align-items-top flex-column flex-lg-row">
       <div class="col-lg-8 col-12 pt-2">
-        <div style="position:relative;" data-aos="fade-up">
+        <div style="position:relative; min-height:300px" data-aos="fade-up">
           <video autoplay muted loop playsinline
                 style="width:100%;max-height:320px;object-fit:cover;border-radius:16px;">
             <source src="myvideo_compressed.mp4" type="video/mp4"/>
