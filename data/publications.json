@@ -1,14 +1,65 @@
 [
   {
     "title": "Finding Optimal Teams: An Analysis of NBA Statistics and Constraints",
-    "date": "2025-07",
-    "authors": "Siddique, S., Li, L., & Wang, Y. In IEEE BigDataService.",
+    "authors": "S Siddique, L Li, Y Wang",
+    "venue": "2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)",
+    "date": "2025-07-21",
+    "pages": "26-34",
+    "publisher": "IEEE",
     "doi": "10.1109/BigDataService65758.2025.00010"
   },
   {
-    "title": "An Enhanced Strategy of Detecting Neurological Disorders from MRI Using Deep Learning",
-    "date": "2023-09",
-    "authors": "Siddique, S., Shultana, S., & Frizell, S. In IEEE AIKE.",
+    "title": "Teaming Strategy Optimization: An Analysis Of NBA Statistics, Shot Charts, And Constraints",
+    "authors": "S Siddique",
+    "venue": "Prairie View A&M University",
+    "date": "2024-05-10",
+    "pages": "",
+    "publisher": "",
+    "doi": ""
+  },
+  {
+    "title": "An Enhanced Strategy of Detecting Neurological Disorders from Magnetic Resonance Images Using Deep Learning",
+    "authors": "S Siddique, S Shultana, S Frizell",
+    "venue": "2023 IEEE Sixth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE)",
+    "date": "2023-09-25",
+    "pages": "99-104",
+    "publisher": "IEEE",
     "doi": "10.1109/AIKE59827.2023.00024"
+  },
+  {
+    "title": "CVD: An improved approach of software vulnerability detection for object oriented programming languages using deep learning",
+    "authors": "S Siddique, AAI Hridoy, SA Khushbu, AK Das",
+    "venue": "Proceedings of the Future Technologies Conference",
+    "date": "2022-10-20",
+    "pages": "145-164",
+    "publisher": "Springer Nature",
+    "doi": "10.1007/978-3-031-18461-1_10"
+  },
+  {
+    "title": "English to Bangla Machine Translation Using Recurrent Neural Network",
+    "authors": "S Siddique, T Ahmed, MR Talukder Azam, M Uddin",
+    "venue": "International Journal of Future Computer and Communication, Vol. 9, No. 2",
+    "date": "2021-06-01",
+    "pages": "",
+    "publisher": "",
+    "doi": "10.18178/ijfcc.2020.9.2.564"
+  },
+  {
+    "title": "The Reliability and Acceptance of Biometric System in Bangladesh: Users Perspective",
+    "authors": "S Siddique, M Yasmin, TB Taher, M Alam",
+    "venue": "International Journal of Computer Trends and Technology, Vol. 69, No. 6",
+    "date": "2021-06-15",
+    "pages": "15-21",
+    "publisher": "",
+    "doi": "10.14445/22312803/IJCTT-V69I6P103"
+  },
+  {
+    "title": "The Factors of Code Reviewing Process to Ensure Software Quality",
+    "authors": "S Siddique",
+    "venue": "Zenodo, E-print",
+    "date": "2020-05-01",
+    "pages": "",
+    "publisher": "",
+    "doi": "10.48550/arXiv.2107.10375"
   }
 ]
