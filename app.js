@@ -129,36 +129,7 @@ const Home = {
     }
   }
 };
-const Research = {
-  template: `
-    <div data-aos="fade-in">
-      <h2>My Research</h2>
-      <div class="row">
-        <div class="col-md-2 mb-3" data-aos="fade-right">
-          <img src="MyDp.jpeg" class="img-thumbnail shadDown">
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-9" data-aos="fade-up">
-          <div class="card">
-            <div class="card-body">
-            <p>My research is dedicated to securing AI-enabled maritime systems against emerging cyber threats. As the industry increasingly relies on artificial intelligence for navigation, port logistics, and autonomous operations, the objective is to ensure these critical systems remain reliable, resilient, and trustworthy.</p>
-            <p>Building on this vision, the research centers on the intersection of maritime cybersecurity, trustworthy AI, and adversarial machine learning. It investigates how adversaries can manipulate sensor and data pipelines—from AIS and GNSS to radar—to deceive AI models and compromise vessel operations. The approach involves designing robust defenses, hardening sensor fusion pipelines, and using VR-based simulations to model and test vessel behaviors in contested cyber environments. Ultimately, the goal is to develop practical, evidence-based security frameworks that maritime operators can trust to safeguard autonomous and AI-driven systems at sea.</p>
-            <h6>Selected Previous Research:</h6>
-            <p>The focus on maritime security emerges from a robust background in applied AI and cybersecurity, with earlier projects evolving from foundational machine learning to tackling real-world security challenges in high-stakes environments.</p>
-            <ul>
-              <li><strong>AI for Cybersecurity:</strong> Development of deep learning models for automated software vulnerability detection in source code and analysis of the reliability and user acceptance of biometric security systems for access control.</li>
-              <li><strong>Advanced Deep Learning Applications:</strong> Application of convolutional neural networks for medical image analysis in detecting neurological disorders and the use of recurrent neural networks for complex natural language processing tasks, including machine translation.</li>
-              <li><strong>Software Engineering & Data Analysis:</strong> Foundational research into code review processes to ensure software quality and data-driven optimization through statistical analysis to identify optimal team compositions.</li>
-            </ul>
-            <p>This interdisciplinary foundation in AI, cybersecurity, and robust software engineering underpins ongoing work in maritime security.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  `,
-  mounted() { AOS.init({ duration: 800 }); }
-};
+
 const Education = {
   data() { return { items: [] }; },
   template: `
