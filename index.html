@@ -89,5 +89,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="app.js"></script>
 </body>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Close navbar collapse after any router-link is clicked
+  document.querySelectorAll('.navbar-nav .router-link-active, .navbar-nav .router-link').forEach(link => {
+    link.addEventListener('click', function() {
+      var navbarCollapse = document.getElementById('navMain');
+      if(navbarCollapse && navbarCollapse.classList.contains('show')) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    });
+  });
 
+  // Close the collapse when clicking outside the navbar
+  document.addEventListener('click', function(e) {
+    var navbarCollapse = document.getElementById('navMain');
+    var isNavbar = e.target.closest('.navbar');
+    if(navbarCollapse && navbarCollapse.classList.contains('show') && !isNavbar) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+});
+</script>
 </html>
