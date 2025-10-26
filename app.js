@@ -42,29 +42,34 @@ const Home = {
             <h3>{{ typingText }}</h3>
           </div></center>
         </div>
-        <div class="mt-3 mb-3" data-aos="fade-right">
-          <h3 class="appFontcolor" style="font-family:'Roboto Mono'"><i class="fa fa-cogs neonText"></i> Welcome!</h3>
-          <p class="text-justify">
-        Hi! I'm <span class="appFontcolor" style="font-family:'Roboto Mono';font-weight:600">Shaykh Siddique</span>, a PhD student in the Department of Computer Science at Texas A&M University. I'm advised by Dr. Nitesh Saxena and co-advised by Dr. Irfan Khan in the
-        <a href="https://spies.engr.tamu.edu" target="_blank" style="color:#43e0b5;">Security and Privacy In Emerging Computing and Networking Systems (SPIES)</a> research lab,
-        and the <a href="https://www.tamug.edu/cares/index.html" target="_blank" style="color:#43e0b5;">Clean And Resilient Energy Systems (CARES)</a> lab. My research interests lie in building privacy engineering tools using machine learning and artificial intelligence.
-      </p>
-      <p class="text-justify">
-        My passion for applying Deep Learning and Artificial Intelligence to real-world challenges has grown stronger as I've developed my skills over the years. The deeper I delve into this field, the more I admire its potential to elegantly address complex issues in areas like cybersecurity, air/marine defense systems, and computer vision for medical imaging.
-      </p>
-      <p class="text-justify">
-        I completed my MS in Computer Science from Prairie View A&M University, Texas, USA. My master’s thesis focused on applying machine learning to sports, where I developed predictive models for player performance and game outcomes. This work involved leveraging statistical and computational techniques to optimize teaming strategies in sports management.
-      </p>
-      <p class="text-justify">
-        Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
-      </p>
-          <div>
-            <a href="https://github.com/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=Hf71CFwAAAAJ" class="circle-icon" target="_blank"><i class="fa fa-graduation-cap"></i></a>
-            <a href="mailto:shaykhsiddiqee@gmail.com" class="circle-icon" target="_blank"><i class="fa fa-envelope"></i></a>
-          </div>
-        </div>
+           <div class="row>
+             <div class="col-md-2 mb-3" data-aos="fade-right">
+                 <img src="MyDp.jpeg" class="img-thumbnail shadDown">
+             </div>
+              <div class="col-md-8 mt-3 mb-3" data-aos="fade-right">
+                <h3 class="appFontcolor" style="font-family:'Roboto Mono'"><i class="fa fa-cogs neonText"></i> Welcome!</h3>
+                <p class="text-justify">
+              Hi! I'm <span class="appFontcolor" style="font-family:'Roboto Mono';font-weight:600">Shaykh Siddique</span>, a PhD student in the Department of Computer Science at Texas A&M University. I'm advised by Dr. Nitesh Saxena and co-advised by Dr. Irfan Khan in the
+              <a href="https://spies.engr.tamu.edu" target="_blank" style="color:#43e0b5;">Security and Privacy In Emerging Computing and Networking Systems (SPIES)</a> research lab,
+              and the <a href="https://www.tamug.edu/cares/index.html" target="_blank" style="color:#43e0b5;">Clean And Resilient Energy Systems (CARES)</a> lab. My research interests lie in building privacy engineering tools using machine learning and artificial intelligence.
+            </p>
+            <p class="text-justify">
+              My passion for applying Deep Learning and Artificial Intelligence to real-world challenges has grown stronger as I've developed my skills over the years. The deeper I delve into this field, the more I admire its potential to elegantly address complex issues in areas like cybersecurity, air/marine defense systems, and computer vision for medical imaging.
+            </p>
+            <p class="text-justify">
+              I completed my MS in Computer Science from Prairie View A&M University, Texas, USA. My master’s thesis focused on applying machine learning to sports, where I developed predictive models for player performance and game outcomes. This work involved leveraging statistical and computational techniques to optimize teaming strategies in sports management.
+            </p>
+            <p class="text-justify">
+              Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
+            </p>
+                <div>
+                  <a href="https://github.com/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
+                  <a href="https://scholar.google.com/citations?user=Hf71CFwAAAAJ" class="circle-icon" target="_blank"><i class="fa fa-graduation-cap"></i></a>
+                  <a href="mailto:shaykhsiddiqee@gmail.com" class="circle-icon" target="_blank"><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+           </div>
         <div class="row mt-3" data-aos="fade-up">
           <!-- Dynamic counters example -->
           <div class="col-6 col-md-3 text-center mb-2">
@@ -187,7 +192,31 @@ const Research = {
   mounted() { AOS.init({ duration: 800 }); }
 };
 
-
+const Education = {
+  data() { return { items: [] }; },
+  template: `
+    <div>
+      <hr>
+      <h2 data-aos="fade-left">Education</h2>
+      <div class="row">
+        <div class="col-md-8 col-12">
+          <div class="timeline">
+            <div class="timeline-item" v-for="e in items" data-aos="fade-right">
+              <h3>{{e.degree}}</h3>
+              <time>{{e.period}}</time>
+              <div class="location">{{e.institution}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 text-center col-12">
+          <img src="my_rep.jpeg" class="img-rounded mt-3" height="170" data-aos="zoom-in">
+        </div>
+      </div>
+    </div>
+  `,
+  created() { loadData('data/education.json').then(d => this.items = d); },
+  mounted() { AOS.init({ duration: 800 }); }
+};
 
 const Publications = {
   data() { return { pubs: [] }; },
