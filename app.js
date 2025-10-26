@@ -30,34 +30,32 @@ const Home = {
     }
   },
   template: `
-    <div class="row align-items-top flex-column flex-lg-row">
-      <div class="col-lg-8 col-12 pt-2">
-        <div style="position:relative;min-height:320px" data-aos="fade-up">
-          <video autoplay muted loop playsinline
-                style="width:100%;max-height:320px;object-fit:cover;border-radius:16px;">
-            <source src="myvideo_compressed.mp4" type="video/mp4"/>
-          </video>
-          <center><div class="typewriterClass"
-            style="position:absolute;top:28px;left:28px;z-index:2;background:rgba(0,25,55,0.49);padding:16px 22px;border-radius:12px;box-shadow:0 0 12px #151e2c;">
-            <h3>{{ typingText }}</h3>
-          </div></center>
-        </div>
-        <div class="mt-3 mb-3" data-aos="fade-right">
-          <h3 class="appFontcolor" style="font-family:'Roboto Mono'"><i class="fa fa-cogs neonText"></i> Welcome!</h3>
+    <div class="row">
+      <!-- Left: Profile Image -->
+      <div class="col-md-4 col-12 text-center mb-3 mb-md-0" data-aos="fade-right">
+        <img src="MyDp.jpeg" alt="Shaykh Siddique" class="img-thumbnail shadDown" style="max-width:220px; border-radius:14px;">
+      </div>
+      <!-- Right: About Me Text -->
+      <div class="col-md-8 col-12" data-aos="fade-left">
+        <div class="mt-3 mb-3">
+          <h3 class="appFontcolor" style="font-family:'Roboto Mono'">
+            <i class="fa fa-cogs neonText"></i> Welcome!
+          </h3>
           <p class="text-justify">
-        Hi! I'm <span class="appFontcolor" style="font-family:'Roboto Mono';font-weight:600">Shaykh Siddique</span>, a PhD student in the Department of Computer Science at Texas A&M University. I'm advised by Dr. Nitesh Saxena and co-advised by Dr. Irfan Khan in the
-        <a href="https://spies.engr.tamu.edu" target="_blank" style="color:#43e0b5;">Security and Privacy In Emerging Computing and Networking Systems (SPIES)</a> research lab,
-        and the <a href="https://www.tamug.edu/cares/index.html" target="_blank" style="color:#43e0b5;">Clean And Resilient Energy Systems (CARES)</a> lab. My research interests lie in building privacy engineering tools using machine learning and artificial intelligence.
-      </p>
-      <p class="text-justify">
-        My passion for applying Deep Learning and Artificial Intelligence to real-world challenges has grown stronger as I've developed my skills over the years. The deeper I delve into this field, the more I admire its potential to elegantly address complex issues in areas like cybersecurity, air/marine defense systems, and computer vision for medical imaging.
-      </p>
-      <p class="text-justify">
-        I completed my MS in Computer Science from Prairie View A&M University, Texas, USA. My master’s thesis focused on applying machine learning to sports, where I developed predictive models for player performance and game outcomes. This work involved leveraging statistical and computational techniques to optimize teaming strategies in sports management.
-      </p>
-      <p class="text-justify">
-        Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
-      </p>
+            Hi! I'm <span class="appFontcolor" style="font-family:'Roboto Mono';font-weight:600">Shaykh Siddique</span>,
+            a PhD student in the Department of Computer Science at Texas A&M University. I'm advised by Dr. Nitesh Saxena and co-advised by Dr. Irfan Khan in the
+            <a href="https://spies.engr.tamu.edu" target="_blank" style="color:#43e0b5;">Security and Privacy In Emerging Computing and Networking Systems (SPIES)</a> research lab,
+            and the <a href="https://www.tamug.edu/cares/index.html" target="_blank" style="color:#43e0b5;">Clean And Resilient Energy Systems (CARES)</a> lab. My research interests lie in building privacy engineering tools using machine learning and artificial intelligence.
+          </p>
+          <p class="text-justify">
+            My passion for applying Deep Learning and Artificial Intelligence to real-world challenges has grown stronger as I've developed my skills over the years. The deeper I delve into this field, the more I admire its potential to elegantly address complex issues in areas like cybersecurity, air/marine defense systems, and computer vision for medical imaging.
+          </p>
+          <p class="text-justify">
+            I completed my MS in Computer Science from Prairie View A&M University, Texas, USA. My master’s thesis focused on applying machine learning to sports, where I developed predictive models for player performance and game outcomes. This work involved leveraging statistical and computational techniques to optimize teaming strategies in sports management.
+          </p>
+          <p class="text-justify">
+            Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
+          </p>
           <div>
             <a href="https://github.com/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
@@ -65,8 +63,7 @@ const Home = {
             <a href="mailto:shaykhsiddiqee@gmail.com" class="circle-icon" target="_blank"><i class="fa fa-envelope"></i></a>
           </div>
         </div>
-        <div class="row mt-3" data-aos="fade-up">
-          <!-- Dynamic counters example -->
+        <div class="row mt-3">
           <div class="col-6 col-md-3 text-center mb-2">
             <div style="font-size:2.1rem;font-family:'Roboto Mono';color:#7fffd4" id="pubCount"></div>
             <div style="color:#999;font-size:.98rem;">Publications</div>
@@ -77,6 +74,20 @@ const Home = {
           </div>
         </div>
       </div>
+      <!-- Underneath: Video Banner with Typing Effect -->
+      <div class="col-12 mt-4" data-aos="fade-up">
+        <div style="position:relative;min-height:320px;">
+          <video autoplay muted loop playsinline
+                 style="width:100%;max-height:320px;object-fit:cover;border-radius:16px;">
+            <source src="myvideo.mp4" type="video/mp4"/>
+          </video>
+          <div class="typewriterClass"
+               style="position:absolute;top:28px;left:28px;z-index:2;background:rgba(0,25,55,0.49);padding:16px 22px;border-radius:12px;box-shadow:0 0 12px #151e2c;">
+            <h3>{{ typingText }}</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Right (on large screens), Below (on small screens): News Card -->
       <div class="col-lg-4 col-12 mt-3 mt-lg-0" data-aos="fade-left">
         <div class="card">
           <div class="card-header text-center">
@@ -88,7 +99,6 @@ const Home = {
                 <b class="appFontcolor">{{ n.title }}</b><br>
                 <small style="color:#888;">{{ n.date }}</small>
                 <div>{{ n.content }}</div>
-                <!-- UPDATED LINK: This now links to the article detail page -->
                 <div>
                   <router-link :to="{ name: 'news-article', params: { id: n.id } }" style="color:#43e0b5;">
                     Read more
