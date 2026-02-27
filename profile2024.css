@@ -273,3 +273,28 @@ h6{
 .footer{
   padding: 10px 0px;
 }
+
+
+.social-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;   /* equal spacing across full row */
+    align-items: center;
+    padding: 25px 0;
+}
+
+.circle-icon {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;        /* maximize icon size */
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.circle-icon:hover {
+    transform: scale(1.15);
+}
