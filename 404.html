@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Shaykh Siddique | Cybersecurity & AI Research</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <!-- Bootstrap & FontAwesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Google Fonts: Inter + Roboto Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@600&display=swap"
+    rel="stylesheet">
+  <!-- AOS: Animate On Scroll -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="profile2024.css">
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@3.6.5/dist/vue-router.min.js"></script>
+  <!-- AOS Animate On Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+</head>
+
+<body style="background: #000000; color: #eee;">
+  <div id="app">
+    <nav class="navbar navbar-expand-lg neon-navbar fixed-top">
+  <a class="navbar-brand neon-brand" href="/">
+    <i class="blinking fa fa-terminal neon-symbol"></i> Shaykh Siddique
+  </a>
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navMain">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navMain">
+    <ul class="navbar-nav ml-auto nav-pills neon-navlist">
+      <li class="nav-item">
+        <!-- Only diff is the exact prop below! -->
+        <router-link to="/" exact class="nav-link neon-link">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/research" class="nav-link neon-link">Research</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/publications" class="nav-link neon-link">Publications</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/experience" class="nav-link neon-link">Experience</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/education" class="nav-link neon-link">Education</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/awards" class="nav-link neon-link">Leadership & Awards</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/contact" class="nav-link neon-link">Contact</router-link>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div style="height: 90px;"></div>
+    <div class="container-fluid pt-3 px-2" style="min-height: 800px;">
+      <router-view></router-view>
+    </div>
+    <footer class="footer pt-3 px-1" style="background:#23273c;">
+      <div class="row text-center">
+        <div class="col-md-5 col-12 mb-2 mb-md-0">Shaykh Siddique &copy; 2025-2026 All rights reserved</div>
+        <div class="col-md-2 col-4 mb-2 mb-md-0">
+          <a href="https://www.linkedin.com/in/shaykhsiddique" target="_blank" style="color: #00ACED;">
+            <i class="fa fa-linkedin-square"></i> shaykhsiddique
+          </a>
+        </div>
+        <div class="col-md-3 col-5 mb-2 mb-md-0">
+          <a href="mailto:shaykhsiddiqee@gmail.com" style="color: #fff;">
+            <i class="fa fa-envelope"></i> shaykhsiddiqee@gmail.com
+          </a>
+        </div>
+        <!-- <div class="col-md-2 col-3">
+          <a href="tel:+19796450271" style="color: #fff;">
+            <i class="fa fa-phone"></i> +1 (979) 645-0271
+          </a>
+        </div> -->
+      </div>
+    </footer>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+  
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Collapse navbar when a router-link is clicked.
+  document.getElementById('navMain').addEventListener('click', function(e) {
+    var target = e.target;
+    // If a router-link is clicked (has the neon-link class)
+    if (target.classList.contains('neon-link')) {
+      // Only close if the collapse is open
+      var navbarCollapse = document.getElementById('navMain');
+      if(navbarCollapse && navbarCollapse.classList.contains('show')) {
+        $('.navbar-collapse').collapse('hide');
+      }
+    }
+  });
+
+  // Collapse when clicking outside the navbar (for mobile):
+  document.addEventListener('click', function(e) {
+    var navbarCollapse = document.getElementById('navMain');
+    var isNavbarChild = e.target.closest('.navbar');
+    if(navbarCollapse && navbarCollapse.classList.contains('show') && !isNavbarChild) {
+      $('.navbar-collapse').collapse('hide');
+    }
+  });
+});
+</script>
+</html>
