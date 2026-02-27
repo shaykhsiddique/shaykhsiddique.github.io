@@ -1,5 +1,6 @@
 function loadData(file) {
-  return fetch('/' + file).then(r => r.json()).catch(() => []);
+  const url = file.startsWith('/') ? file : '/' + file;
+  return fetch(url).then(r => r.json()).catch(() => []);
 }
 
 // Helper: Animate numbers
