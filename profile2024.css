@@ -283,18 +283,4 @@ h6{
     padding: 25px 0;
 }
 
-.circle-icon {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 42px;        /* maximize icon size */
-    transition: 0.3s;
-    text-decoration: none;
-}
 
-.circle-icon:hover {
-    transform: scale(1.15);
-}
