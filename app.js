@@ -5,6 +5,7 @@ function loadData(file) {
 
 // Helper: Animate numbers
 function animateValue(el, start, end, duration) {
+  if (!el) return;   
   let range = end - start, minTimer = 50, stepTime = Math.max(Math.floor(duration / range), minTimer);
   let startTime = new Date().getTime(), endTime = startTime + duration;
   function run() {
