@@ -65,17 +65,17 @@ const Home = {
             <a href="mailto:shaykhsiddiqee@gmail.com" class="circle-icon" target="_blank"><i class="fa fa-envelope"></i></a>
           </div>
         </div>
-        // <div class="row mt-3" data-aos="fade-up">
-        //   <!-- Dynamic counters example -->
-        //   <div class="col-6 col-md-3 text-center mb-2">
-        //     <div style="font-size:2.1rem;font-family:'Roboto Mono';color:#7fffd4" id="pubCount"></div>
-        //     <div style="color:#999;font-size:.98rem;">Publications</div>
-        //   </div>
-        //   <div class="col-6 col-md-3 text-center mb-2">
-        //     <div style="font-size:2.1rem;font-family:'Roboto Mono';color:#7fffd4" id="expCount"></div>
-        //     <div style="color:#999;font-size:.98rem;">Roles</div>
-        //   </div>
-        // </div>
+        <!-- <div class="row mt-3" data-aos="fade-up">
+          <!-- Dynamic counters example -->
+          <div class="col-6 col-md-3 text-center mb-2">
+            <div style="font-size:2.1rem;font-family:'Roboto Mono';color:#7fffd4" id="pubCount"></div>
+            <div style="color:#999;font-size:.98rem;">Publications</div>
+          </div>
+          <div class="col-6 col-md-3 text-center mb-2">
+            <div style="font-size:2.1rem;font-family:'Roboto Mono';color:#7fffd4" id="expCount"></div>
+            <div style="color:#999;font-size:.98rem;">Roles</div>
+          </div>
+        </div> -->
       </div>
       <div class="col-lg-4 col-12 mt-3 mt-lg-0" data-aos="fade-left">
         <div class="card">
