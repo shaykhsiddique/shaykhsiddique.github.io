@@ -58,11 +58,11 @@ const Home = {
       <p class="text-justify">
         Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
       </p>
-          <div class="social-row">
-            <a href="https://github.com/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://scholar.google.com/citations?user=Hf71CFwAAAAJ" class="circle-icon" target="_blank"><i class="fa fa-graduation-cap"></i></a>
-            <a href="mailto:shaykhsiddiqee@gmail.com" class="circle-icon" target="_blank"><i class="fa fa-envelope"></i></a>
+          <div class="social-row d-flex justify-content-evenly align-items-center w-100 py-4">
+            <a href="https://github.com/shaykhsiddique"><i class="fa fa-github fs-1"></i></a>
+            <a href="https://www.linkedin.com/in/shaykhsiddique"><i class="fa fa-linkedin fs-1"></i></a>
+            <a href="https://scholar.google.com/citations?user=Hf71CFwAAAAJ"><i class="fa fa-graduation-cap fs-1"></i></a>
+            <a href="mailto:shaykhsiddiqee@gmail.com"><i class="fa fa-envelope fs-1"></i></a>
           </div>
         </div>
       </div>
