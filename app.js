@@ -9,7 +9,9 @@ function animateValue(el, start, end, duration) {
   function run() {
     let now = new Date().getTime(), remaining = Math.max((endTime - now) / duration, 0);
     let value = Math.round(end - (remaining * range));
-    el.textContent = value;
+    if(value){
+      el.textContent = value;
+    }
     if (value < end) setTimeout(run, stepTime);
   }
   run();
