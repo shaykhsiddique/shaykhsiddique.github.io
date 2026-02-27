@@ -58,7 +58,7 @@ const Home = {
       <p class="text-justify">
         Beyond my research pursuits, I have a deep passion for traveling and immersing myself in nature. I find great joy in exploring new places and experiencing different cultures. Additionally, I enjoy swimming, playing badminton, and engaging in chess.
       </p>
-          <div>
+          <div class="social-row>
             <a href="https://github.com/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-github"></i></a>
             <a href="https://www.linkedin.com/in/shaykhsiddique" class="circle-icon" target="_blank"><i class="fa fa-linkedin"></i></a>
             <a href="https://scholar.google.com/citations?user=Hf71CFwAAAAJ" class="circle-icon" target="_blank"><i class="fa fa-graduation-cap"></i></a>
