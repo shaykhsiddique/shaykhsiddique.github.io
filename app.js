@@ -1,6 +1,5 @@
 function loadData(file) {
-  const url = file.startsWith('/') ? file : '/' + file;  // force absolute path
-  return fetch(url).then(r => r.json()).catch(() => []);
+  return fetch('/' + file).then(r => r.json()).catch(() => []);
 }
 
 // Helper: Animate numbers
