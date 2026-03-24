@@ -136,7 +136,14 @@ const Research = {
         <div class="col-md-9" data-aos="fade-up">
           <div class="card">
             <div class="card-body">
-            <p>My research is dedicated to securing AI-enabled maritime systems against emerging cyber threats. As the industry increasingly relies on artificial intelligence for navigation, port logistics, and autonomous operations, the objective is to ensure these critical systems remain reliable, resilient, and trustworthy.</p>
+            <p>My research is dedicated to securing AI-enabled systems against emerging cyber threats.</p>
+            <ul>
+              <li>AI Security</li>
+              <li><strong>Cyber Warfare and AI Electronic Warfare</li>
+              <li><strong>Maritime Cyber Seciruty</li>
+              <li>Neuroimaging & Neuro-privacy</li>
+              
+            </ul>
             <p>Building on this vision, the research centers on the intersection of maritime cybersecurity, trustworthy AI, and adversarial machine learning. It investigates how adversaries can manipulate sensor and data pipelines—from AIS and GNSS to radar—to deceive AI models and compromise vessel operations. The approach involves designing robust defenses, hardening sensor fusion pipelines, and using VR-based simulations to model and test vessel behaviors in contested cyber environments. Ultimately, the goal is to develop practical, evidence-based security frameworks that maritime operators can trust to safeguard autonomous and AI-driven systems at sea.</p>
             <h6>Selected Previous Research:</h6>
             <p>The focus on maritime security emerges from a robust background in applied AI and cybersecurity, with earlier projects evolving from foundational machine learning to tackling real-world security challenges in high-stakes environments.</p>
