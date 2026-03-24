@@ -140,7 +140,7 @@ const Research = {
             <ul>
               <li>AI Security</li>
               <li>Cyber Warfare and AI Electronic Warfare</li>
-              <li>Maritime Cyber Seciruty</li>
+              <li>Maritime Cyber Security</li>
               <li>Neuroimaging & Neuro-privacy</li>
               
             </ul>
